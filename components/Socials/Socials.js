@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const Socials = () => {
+const Socials = ({ className }) => {
   return (
-    <ul className="flex gap-2">
+    <ul className={`flex gap-2 ${className}`}>
       <li>
         <a href="#" target="blank" rel="noopener noreferrer nofollow">
           <Image

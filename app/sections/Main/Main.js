@@ -23,7 +23,7 @@ const Main = () => {
         >
           <button
             type="button"
-            className="border border-accentColor rounded-full flex items-center p-1 pl-3 gap-3 text-description"
+            className="border border-accentColor rounded-full flex items-center p-1 pl-3 gap-3 text-description hover:bg-primaryColor hover:border-primaryColor hover:text-accentColor"
           >
             Learn more
             <div className="bg-accentColor rounded-full p-2 ">

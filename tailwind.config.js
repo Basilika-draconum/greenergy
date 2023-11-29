@@ -14,9 +14,12 @@ module.exports = {
         bigMobile: "480px",
       },
       colors: {
+        primaryColor: "#173D33",
         accentColor: "#97D28B",
         secondaryColor: "#DCEFD8",
+        errorColor: "#D28B8B",
         bgMenu: "#173d33",
+        bgForm: "#EAEDF1",
       },
       fontSize: {
         titleH2: ["28px", { fontWeight: "400", lineHeight: "28px" }],
