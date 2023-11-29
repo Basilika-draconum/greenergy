@@ -82,7 +82,7 @@ const ContactForm = () => {
       <div className="mb-7">
         <label className="block mb-2">* Message:</label>
         <textarea
-          className="bg-white/[.05] pb-2 pl-2 pr-2 w-full border-b-[1px] border-accentColor placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
+          className="bg-white/[.05] pb-2 pl-2 pr-2 w-full border-b-[1px] resize-none border-accentColor placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
           rows={5}
           placeholder="My message..."
           {...register("message", { required: "This is required" })}
