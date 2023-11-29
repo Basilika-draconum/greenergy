@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "/icons/maximize-circle.svg",
+        "title": "Openness",
+        "description": "to the world, people, new ideas and projects"
+    },
+    {
+        "icon": "/icons/global-edit.svg",
+        "title": "Responsibility",
+        "description": "we are aware that the results of our work have an impact on our lives and the lives of future generations"
+    },
+    {
+        "icon": "/icons/cpu-charge.svg",
+        "title": "Innovation",
+        "description": "we use the latest technology to implement non-standard solutions"
+    },
+    {
+        "icon": "/icons/ranking.svg",
+        "title": "Quality",
+        "description": "we do not strive to be the first among others, but we want to be the best in our business"
+    }
+]
