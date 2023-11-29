@@ -39,12 +39,18 @@ const Main = () => {
         <address className="mb-[36px]">
           <ul className="not-italic flex flex-col gap-2 items-center">
             <li className="text-description">
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="" target="_blank" rel="noopener noreferrer nofollow">
                 79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
               </a>
             </li>
             <li className="text-description cursor-pointer">
-              <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
+              <a
+                href="mailto:office@ecosolution.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                office@ecosolution.com
+              </a>
             </li>
           </ul>
         </address>
