@@ -10,7 +10,7 @@ const Header = () => {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <header className="w-full pt-9">
+    <header className="w-full pt-9 mb-[146px]">
       <div className="container-main flex items-center justify-between">
         <div>
           <a className="cursor-pointer flex gap-1" href="/" aria-label="logo">

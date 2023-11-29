@@ -1,7 +1,11 @@
 import React from "react";
 
 const Cases = () => {
-  return <div>Cases</div>;
+  return (
+    <section id="cases">
+      <div className="container-main">Cases</div>
+    </section>
+  );
 };
 
 export default Cases;

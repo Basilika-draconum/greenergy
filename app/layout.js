@@ -8,6 +8,7 @@ const firaSans = Fira_Sans({
   style: ["normal"],
   subsets: ["latin"],
 });
+
 export const oswald = Oswald({
   weight: ["400"],
   style: ["normal"],
