@@ -13,11 +13,7 @@ const Header = () => {
     <header className="w-full pt-9">
       <div className="container-main flex items-center justify-between">
         <div>
-          <a
-            className="cursor-pointer self-center flex gap-1"
-            href="/"
-            aria-label="logo"
-          >
+          <a className="cursor-pointer flex gap-1" href="/" aria-label="logo">
             <Image
               src="/icons/favicon.svg"
               alt="Logo"
@@ -27,14 +23,14 @@ const Header = () => {
             />
             <Image
               src="/icons/ecosolution.svg"
-              alt="Logo"
+              alt="Ecosolution"
               width={170}
               height={18}
               priority={true}
             />
             <Image
               src="/icons/greenergy.svg"
-              alt="Logo"
+              alt="Greenergy"
               width={60}
               height={18}
               priority={true}

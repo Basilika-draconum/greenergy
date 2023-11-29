@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         accentColor: "#97D28B",
         secondaryColor: "#DCEFD8",
+        bgMenu: "#173d33",
       },
       fontSize: {
         titleH2: ["28px", { fontWeight: "400", lineHeight: "28px" }],
