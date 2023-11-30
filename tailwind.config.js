@@ -27,6 +27,14 @@ module.exports = {
           "16px",
           { lineHeight: "normal", letterSpacing: "-0.64px", fontWeight: "400" },
         ],
+        question: [
+          "18px",
+          { lineHeight: "normal", letterSpacing: "-0.72px", fontWeight: "400" },
+        ],
+        subQuestion: [
+          "14px",
+          { lineHeight: "normal", letterSpacing: "-0.56px", fontWeight: "400" },
+        ],
       },
     },
   },

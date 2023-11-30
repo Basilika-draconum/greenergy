@@ -1,0 +1,27 @@
+
+details{
+    padding-left: 24px;
+}
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+details summary {
+    cursor: pointer;
+    position: relative;
+}
+details summary::before {
+    content: url("/icons/add.svg");
+    position: absolute;
+    top: 18px;
+    left: -31px;
+    /* transform: translateY(-50%); */
+    width: 16px;
+    height: 16px;
+}
+details[open]>summary::before {
+   content:url("/icons/minus.svg")
+}
