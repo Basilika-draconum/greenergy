@@ -5,7 +5,7 @@ import Title from "@/components/Title/Title";
 
 const Contact = () => {
   return (
-    <section className="mb-9">
+    <section className="section-main" id="contact">
       <div className="container-main">
         <Title text={"Contact us"} className={"text-center"} />
         <div className="mt-6">

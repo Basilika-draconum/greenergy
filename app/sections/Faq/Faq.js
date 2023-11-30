@@ -5,7 +5,7 @@ import "./faq.css";
 
 const Faq = () => {
   return (
-    <section className="mb-9">
+    <section className="section-main" id="faq">
       <div className="container-main">
         <Title text={"Frequently Asked Questions"} className={"mb-6"} />
 

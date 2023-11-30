@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-6 border-t-[1px] border-accentColor ">
+    <footer className="w-full py-6 border-t-[1px] border-accentColor">
       <div className="container-main ">
         <div className="mb-6">
           <a className="cursor-pointer flex gap-1" href="/" aria-label="logo">

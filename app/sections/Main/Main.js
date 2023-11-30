@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Main = () => {
   return (
-    <section className="mb-12">
+    <section className="section-main" id="main">
       <div className="container-main ">
         <h1 className={`${oswald.className} uppercase text-4xl leading-9 mb-6`}>
           RENEWABLE ENERGY for any task

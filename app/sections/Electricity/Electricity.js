@@ -4,7 +4,7 @@ import { oswald } from "@/app/layout";
 
 const Electricity = () => {
   return (
-    <section className="pb-9">
+    <section className="section-main" id="electricity">
       <div className="container-main">
         <Title
           text={"Electricity we produced for all time"}

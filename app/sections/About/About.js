@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="mb-9">
+    <section className="section-main" id="about">
       <div className="container-main">
         <Title text={"Main values of our company "} className={"w-[250px]"} />
         <p className="text-description mt-6 mb-9 text-justify">
