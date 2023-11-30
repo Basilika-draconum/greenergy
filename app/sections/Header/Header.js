@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import Menu from "@/components/Menu/Menu";
+import { Link } from "react-scroll";
+import Logo from "@/components/Logo/Logo";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
@@ -13,35 +15,13 @@ const Header = () => {
     <header className="w-full pt-9 mb-[146px]">
       <div className="container-main flex items-center justify-between">
         <div>
-          <a className="cursor-pointer flex gap-1" href="/" aria-label="logo">
-            <Image
-              src="/icons/favicon.svg"
-              alt="Logo"
-              width={31}
-              height={18}
-              priority={true}
-            />
-            <Image
-              src="/icons/ecosolution.svg"
-              alt="Ecosolution"
-              width={170}
-              height={18}
-              priority={true}
-            />
-            <Image
-              src="/icons/greenergy.svg"
-              alt="Greenergy"
-              width={60}
-              height={18}
-              priority={true}
-            />
-          </a>
+          <Logo />
         </div>
         <div className="flex">
           <button
             onClick={toggleMenu}
             type="button"
-            className="bg-secondaryColor px-3 py-3 border rounded-full"
+            className="bg-secondaryColor px-3 py-3 border rounded-full hover:bg-accentColor transition ease duration-300 tablet:mr-3"
           >
             <Image
               src="/icons/menu.svg"
@@ -52,9 +32,23 @@ const Header = () => {
             />
           </button>
           {isMenuOpen && <Menu closeMenu={() => setMenuOpen(false)} />}
-          <button className="hidden tablet:flex" type="button">
+          <Link
+            className="hidden cursor-pointer tablet:flex text-description rounded-full bg-accentColor items-center px-4 hover:text-accentColor hover:bg-primaryColor transition ease duration-300 group"
+            to="contact"
+            spy
+            smooth
+            duration="1500"
+          >
             Get in touch
-          </button>
+            <Image
+              src="/icons/arrow-right.svg"
+              alt="Menu"
+              width={9}
+              height={9}
+              priority={true}
+              className="ml-3 bg-primaryColor rounded-full rotate-90 transition ease duration-300 w-[14px] h-[14px] group-hover:bg-accentColor"
+            />
+          </Link>
         </div>
       </div>
     </header>

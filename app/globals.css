@@ -34,8 +34,9 @@ body {
     padding: 0 100px;
   }
 }
+
 .section-main {
-  margin-bottom: 36px ;
+  margin-bottom: 36px;
 
   /* @media screen and (min-width: 768px) {
     padding: 64px 0;
@@ -44,4 +45,13 @@ body {
   @media screen and (min-width: 1280px) {
     padding: 104px 80px;
   } */
-} 
+}
+
+.hoverClass {
+  transition: filter 0.3s ease;
+}
+
+.hoverClass:hover {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
+
+}

@@ -37,6 +37,7 @@ const Menu = ({ closeMenu }) => {
                     to={href}
                     spy
                     smooth
+                    activeClass="active"
                     duration={duration}
                     className="flex gap-2"
                   >
