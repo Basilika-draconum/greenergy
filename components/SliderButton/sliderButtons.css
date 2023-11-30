@@ -30,10 +30,6 @@
     filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
 }
 .swiper-button-prev {
-    /* left:calc(58%); */
     right: 20px;
     transform: rotate(180deg);
-    /* @media screen and(max-width:400px) {
-    left: 220px;
-    } */
 }

@@ -38,6 +38,7 @@ const Header = () => {
             spy
             smooth
             duration="1500"
+            href="/"
           >
             Get in touch
             <Image

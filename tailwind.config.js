@@ -23,6 +23,8 @@ module.exports = {
       },
       fontSize: {
         titleH2: ["28px", { fontWeight: "400", lineHeight: "28px" }],
+        titleH2Tablet: ["36px", { fontWeight: "400", lineHeight: "36px" }],
+        titleH2Desktop: ["48px", { fontWeight: "400", lineHeight: "48px" }],
         description: [
           "16px",
           { lineHeight: "normal", letterSpacing: "-0.64px", fontWeight: "400" },

@@ -38,10 +38,10 @@ body {
 .section-main {
   margin-bottom: 36px;
 
-  /* @media screen and (min-width: 768px) {
-    padding: 64px 0;
+  @media screen and (min-width: 768px) {
+  margin-bottom: 100px;
   }
-
+ /*
   @media screen and (min-width: 1280px) {
     padding: 104px 80px;
   } */
@@ -53,5 +53,4 @@ body {
 
 .hoverClass:hover {
   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
-
 }

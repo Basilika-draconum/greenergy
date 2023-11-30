@@ -7,7 +7,10 @@ const ValueTables = () => {
   return (
     <ul className="grid grid-cols-2 gap-6">
       {values.map(({ icon, title, description }, index) => (
-        <li className="bg-bgForm px-3 pt-4 w-[148px] h-[197px]" key={index}>
+        <li
+          className="bg-bgForm px-3 pt-4 min-w-[148px] max-w-[190px] h-[197px]"
+          key={index}
+        >
           <div
             className={`${oswald.className} uppercase text-base mb-8 flex gap-2`}
           >
@@ -24,3 +27,19 @@ const ValueTables = () => {
 };
 
 export default ValueTables;
+{
+  /* <Image
+        src="/images/values1.jpg"
+        width={346}
+        height={234}
+        alt="windfarms fields"
+        className="md:hidden col-span-2"
+      />
+      <Image
+        src="/images/values2.jpg"
+        width={346}
+        height={234}
+        alt="man worker firld by solar panels"
+        className="md:hidden col-span-2"
+      /> */
+}

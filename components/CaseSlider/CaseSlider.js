@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
 import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
-
 import "swiper/css";
 import slides from "@/public/content/casesSlider.json";
 import Image from "next/image";
+import "./caseSlider.css";
 
 const carouselSettings = {
   spaceBetween: 25,
@@ -19,10 +18,10 @@ const carouselSettings = {
   grabCursor: true,
   loop: true,
   slidesPerView: 1,
-  speed: 2000,
+  speed: 1000,
   breakpoints: {
     768: {
-      spaceBetween: 25,
+      spaceBetween: 24,
       slidesPerView: 2,
     },
     1440: {
@@ -37,7 +36,7 @@ const CaseSlider = () => {
     <Swiper {...carouselSettings}>
       {slides &&
         slides.map(({ id, photo, title, city, subtitle, date }, index) => (
-          <SwiperSlide key={id} className="">
+          <SwiperSlide key={id} className=".swiper-slide-case">
             <div className="bg-bgForm">
               <Image
                 src={photo}
@@ -45,15 +44,27 @@ const CaseSlider = () => {
                 width={320}
                 height={224}
                 loading="lazy"
-                sizes="(max-width: 767px) 360px, (max-width: 1279px) 400px, 600px"
+                sizes="(max-width: 767px) 360px, (max-width: 1279px) 342px, 596px"
+                className="image-slider"
               />
-              <div className="p-3 pt-4">
-                <div className="flex gap-[61px]">
+              <div className="p-3 pt-4 h-[140px]">
+                <div className="flex justify-between mb-4">
                   <div className="text-question">
                     <p>{city}</p>
                     <p className="w-[175px]">{title}</p>
                   </div>
-                  <button>Button</button>
+                  <button
+                    className="bg-accentColor rounded-full p-4 hover:bg-primaryColor ease duration-300 group"
+                    type="button"
+                  >
+                    <Image
+                      src="/icons/arrow-right.svg"
+                      width={28}
+                      height={28}
+                      alt="reference"
+                      className="-rotate-45 hoverClass"
+                    />
+                  </button>
                 </div>
                 <div className="flex justify-between border-t-[1px] border-accentColor pt-3 text-xs tracking-[-0.48px]">
                   <p>{subtitle}</p>

@@ -8,16 +8,23 @@ const Electricity = () => {
       <div className="container-main">
         <Title
           text={"Electricity we produced for all time"}
-          className={"text-center"}
+          className={
+            "text-center w-[286px] mx-auto tablet:w-[368px] desktop:w-[491px]"
+          }
         />
-        <p className="mt-24 text-2xl leading-6">
-          <span
-            className={`${oswald.className} font-bold text-5xl text-accentColor`}
+        <div className="relative">
+          <p
+            className="flex justify-center items-center mt-24 text-center text-2xl leading-6 tablet:mt-[135px] tablet:text-[28px] tablet:leading-[48px] desktop:text-5xl desktop:mt-[120px] before:content-[''] before:block before:z-10 before:absolute before:w-[1px] before:h-[48px] before:top-[-65px]
+  before:inset-x-2/4 before:bg-accentColor tablet:before:h-[87px] tablet:before:top-[-103px] desktop:before:top-[-91px]"
           >
-            1.134.147.814
-          </span>{" "}
-          kWh
-        </p>
+            <span
+              className={`${oswald.className} mr-2 font-bold text-5xl text-accentColor tablet:text-[100px] tablet:mr-6 desktop:text-[164px]`}
+            >
+              1.134.147.814
+            </span>
+            kWh
+          </p>
+        </div>
       </div>
     </section>
   );
