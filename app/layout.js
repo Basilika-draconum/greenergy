@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "./sections/Header/Header";
 
 const firaSans = Fira_Sans({
-  weight: ["400"],
+  weight: ["400", "300"],
   style: ["normal"],
   subsets: ["latin"],
 });

@@ -9,7 +9,8 @@ import slides from "@/public/content/casesSlider.json";
 import Image from "next/image";
 
 const carouselSettings = {
-  spaceBetween: 50,
+  spaceBetween: 25,
+  initialSlide: 0,
   modules: [Navigation],
   navigation: {
     nextEl: ".swiper-button-next",
@@ -18,6 +19,16 @@ const carouselSettings = {
   grabCursor: true,
   loop: true,
   slidesPerView: 1,
+  speed: 2000,
+  breakpoints: {
+    768: {
+      spaceBetween: 25,
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 2,
+    },
+  },
   onSlideChange: () => console.log("slide change"),
 };
 
