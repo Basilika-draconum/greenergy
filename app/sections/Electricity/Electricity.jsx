@@ -1,8 +1,20 @@
-import Title from "@/components/Title/Title";
+"use client";
 import React from "react";
-import { oswald } from "@/app/layout";
+import Title from "@/components/Title/Title";
+import { oswald } from "@/fonts/fonts";
+import { formatNumberWithDots } from "@/utils/functions";
 
 const Electricity = () => {
+  const [count, setCount] = React.useState(1134147814);
+  const formattedCount = formatNumberWithDots(count);
+
+  React.useEffect(() => {
+    const countElectricity = setInterval(() => {
+      setCount((prev) => prev + 1);
+    }, 1000);
+    return () => clearInterval(countElectricity);
+  }, []);
+
   return (
     <section className="section-main" id="electricity">
       <div className="container-main">
@@ -20,7 +32,7 @@ const Electricity = () => {
             <span
               className={`${oswald.className} mr-2 font-bold text-5xl text-accentColor tablet:text-[100px] tablet:mr-6 desktop:text-[164px]`}
             >
-              1.134.147.814
+              {formattedCount}
             </span>
             kWh
           </p>
