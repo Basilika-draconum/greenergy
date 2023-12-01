@@ -1,25 +1,47 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
+import useFormPersist from "react-hook-form-persist";
+
+const formConfigContact = {
+  defaultValues: {
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
+  }
+}
 
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
+    watch,
+    setValue,
     formState: { errors },
-  } = useForm();
+  } = useForm(formConfigContact);
+
+  useFormPersist("contactFormData", {
+    watch,
+    setValue,
+  });
 
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
+   
+    toast.success(`Thank you, ${data.fullName}! We have received your message and will contact you soon!`,
+      { duration: 5000, position: "top-center" });
+     reset();
   });
   return (
-    <form onSubmit={onSubmit} className="bg-bgForm px-3 py-9">
+    <form onSubmit={onSubmit} className="bg-bgForm px-3 py-9 tablet:w-[342px] tablet:px-6 desktop:w-[596px] desktop:p-12">
       <div className="relative">
         <div className="mb-7 ">
-          <label className="block mb-2">* Full name:</label>
+          <label className="block text-description mb-2">* Full name:</label>
           <input
-            className="bg-white/[.05] pb-2 py-2 pt-1 w-full border-b-[1px] border-accentColor placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
+            className="bg-white/[.05] pb-2 py-2 pt-1 w-full border-b-[1px] border-accentColor text-question desktop:text-[20px] desktop:placeholder:text-[20px] placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
             placeholder="John Rosie"
             {...register("fullName", {
               required: "This is required",
@@ -38,9 +60,9 @@ const ContactForm = () => {
       </div>
       <div className="relative">
         <div className="mb-7 ">
-          <label className="block mb-2">* E-mail:</label>
+          <label className="block mb-2 text-description">* E-mail:</label>
           <input
-            className="bg-white/[.05] pb-2 py-2 pt-1 w-full border-b-[1px] border-accentColor placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
+            className="bg-white/[.05] pb-2 py-2 pt-1 w-full border-b-[1px] border-accentColor text-question desktop:text-[20px] desktop:placeholder:text-[20px] placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
             placeholder="johnrosie@gmail.com"
             {...register("email", {
               required: "This is required",
@@ -60,9 +82,9 @@ const ContactForm = () => {
       </div>
       <div className="relative">
         <div className="mb-7">
-          <label className="block mb-2">* Phone:</label>
+          <label className="block mb-2 text-description">* Phone:</label>
           <input
-            className="bg-white/[.05] pb-2 py-2 pt-1 w-full border-b-[1px] border-accentColor placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
+            className="bg-white/[.05] pb-2 py-2 pt-1 w-full border-b-[1px] border-accentColor text-question desktop:text-[20px] desktop:placeholder:text-[20px] placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
             placeholder="380961234567"
             {...register("phone", {
               required: "This is required",
@@ -79,10 +101,10 @@ const ContactForm = () => {
           </p>
         </div>
       </div>
-      <div className="mb-7">
-        <label className="block mb-2">* Message:</label>
+      <div className="mb-4 desktop:mb-8">
+        <label className="block mb-2 text-description">* Message:</label>
         <textarea
-          className="bg-white/[.05] pb-2 pl-2 pr-2 w-full border-b-[1px] resize-none border-accentColor placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
+          className="bg-white/[.05] pb-2 pl-2 pr-2 w-full border-b-[1px] resize-none border-accentColor text-question desktop:text-[20px] desktop:placeholder:text-[20px] placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
           rows={5}
           placeholder="My message..."
           {...register("message", { required: "This is required" })}

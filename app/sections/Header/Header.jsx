@@ -37,7 +37,7 @@ const Header = () => {
             to="contact"
             spy
             smooth
-            duration="1500"
+            duration={1500}
             href="/"
           >
             Get in touch

@@ -29,7 +29,7 @@ const carouselSettings = {
       spaceBetween: 48,
     },
   },
-  onSlideChange: () => console.log("slide change"),
+  // onSlideChange: () => console.log("slide change"),
 };
 
 const CaseSlider = () => {

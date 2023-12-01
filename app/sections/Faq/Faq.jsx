@@ -9,7 +9,6 @@ const Faq = () => {
     <section className="section-main" id="faq">
       <div className="container-main">
         <Title text={"Frequently Asked Questions"} className={"mb-6"} />
-
         <div className="mb-9">
           {frequentlyQuestions.map(({ id, question, answer }, index) => (
             <details
