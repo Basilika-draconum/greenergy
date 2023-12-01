@@ -16,7 +16,12 @@
     },
     {
         "id": "4",
-        "question": "How does EcoSolution engage with local communities and support a just transition to renewable energy?",
-        "answer": "EcoSolution actively engages with local communities by fostering open communication channels and conducting community outreach programs. The company collaborates with residents to understand their needs and concerns, ensuring that renewable energy projects align with local priorities. EcoSolution also facilitates skill development programs, providing training opportunities that empower community members to participate in the growing renewable energy sector. "
+        "question": "How does EcoSolution engage with local communities and support a renewable energy?",
+        "answer": "EcoSolution actively engages with local communities by fostering open communication channels and conducting community outreach programs. The company collaborates with residents to understand their needs and concerns, ensuring that renewable energy projects align with local priorities. EcoSolution also facilitates skill development programs, providing training opportunities that empower community members to participate in the growing renewable energy sector."
+    },
+    {
+        "id":"5",
+        "question":"How can businesses and communities benefit from integrating renewable energy solutions?",
+        "answer":"EcoSolution actively engages with local communities by fostering open communication channels and conducting community outreach programs. The company collaborates with residents to understand their needs and concerns, ensuring that renewable energy projects align with local priorities. EcoSolution also facilitates skill development programs, providing training opportunities that empower community members to participate in the growing renewable energy sector."
     }
 ]

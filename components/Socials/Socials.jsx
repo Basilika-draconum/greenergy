@@ -11,6 +11,7 @@ const Socials = ({ className }) => {
             width={24}
             height={24}
             priority={true}
+            className="hoverClass"
           />
         </a>
       </li>
@@ -22,6 +23,7 @@ const Socials = ({ className }) => {
             width={24}
             height={24}
             priority={true}
+            className="hoverClass"
           />
           {/* <Facebook className="fill-white" /> */}
           {/* <Facebook width={24} height={24} stroke={"red"} alt="Facebook" /> */}

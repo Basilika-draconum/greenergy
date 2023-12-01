@@ -12,7 +12,7 @@ const Header = () => {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <header className="w-full pt-9 mb-[146px]">
+    <header className="w-full py-9 fixed z-20 bg-bgColor">
       <div className="container-main flex items-center justify-between">
         <div>
           <Logo />
@@ -43,7 +43,7 @@ const Header = () => {
             Get in touch
             <Image
               src="/icons/arrow-right.svg"
-              alt="Menu"
+              alt="Arrow"
               width={9}
               height={9}
               priority={true}

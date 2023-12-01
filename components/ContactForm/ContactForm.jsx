@@ -112,7 +112,7 @@ const ContactForm = () => {
       </div>
       <div className="flex justify-end relative">
         <input
-          className="cursor-pointer capitalize border border-accentColor rounded-full flex items-center p-[10px] pl-3 pr-11 gap-3 text-description hover:bg-primaryColor hover:border-primaryColor hover:text-accentColor"
+          className="cursor-pointer capitalize border border-accentColor rounded-full flex items-center p-[10px] pl-3 pr-11 gap-3 text-description hover:bg-primaryColor hover:border-primaryColor hover:text-accentColor transition ease duration-300"
           type="submit"
           value="send"
         />

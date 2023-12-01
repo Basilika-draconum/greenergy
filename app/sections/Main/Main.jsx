@@ -8,7 +8,7 @@ import SimpleAddress from "@/components/SimpleAddress/SimpleAddress";
 
 const Main = () => {
   return (
-    <section className="section-main" id="main">
+    <section className="section-main pt-[222px]" id="main">
       <div className="container-main ">
         <div className="tablet:flex tablet:justify-between border-b-[1px] border-accentColor">
           <h1

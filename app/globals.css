@@ -49,7 +49,12 @@ body {
 .hoverClass {
   transition: filter 0.3s ease;
 }
-
 .hoverClass:hover {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
+}
+.hoverButton {
+  transition: filter 0.3s ease;
+}
+.hoverButton:hover img{
   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
 }

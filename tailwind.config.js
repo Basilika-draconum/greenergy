@@ -18,6 +18,7 @@ module.exports = {
         accentColor: "#97D28B",
         secondaryColor: "#DCEFD8",
         errorColor: "#D28B8B",
+        bgColor: "#F3F5FA",
         bgMenu: "#173d33",
         bgForm: "#EAEDF1",
       },
@@ -37,6 +38,10 @@ module.exports = {
           "14px",
           { lineHeight: "normal", letterSpacing: "-0.56px", fontWeight: "400" },
         ],
+      },
+      content: {
+        linkAdd: 'url("/icons/add.svg")',
+        linkMinus: 'url("/icons/minus.svg")',
       },
     },
   },

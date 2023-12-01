@@ -25,36 +25,37 @@ const Menu = ({ closeMenu }) => {
               />
               close
             </button>
-
-            <ul className="flex flex-col gap-2">
-              {navLinks.map(({ label, href, duration }) => (
-                <li
-                  className="cursor-pointer text-2xl tracking-tighter"
-                  key={href}
-                >
-                  <Link
-                    onClick={closeMenu}
-                    to={href}
-                    spy
-                    smooth
-                    activeClass="active"
-                    duration={duration}
-                    className="flex gap-2"
+            <div className="h-[500px] flex flex-col justify-between">
+              <ul className="flex flex-col gap-2">
+                {navLinks.map(({ label, href, duration }) => (
+                  <li
+                    className="cursor-pointer text-2xl tracking-tighter"
+                    key={href}
                   >
-                    <p>{label}</p>
-                    <Image
-                      src="/icons/arrow-right-top.svg"
-                      alt="Link"
-                      width={20}
-                      height={20}
-                      priority={true}
-                    />
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                    <Link
+                      onClick={closeMenu}
+                      to={href}
+                      spy
+                      smooth
+                      activeClass="active"
+                      duration={duration}
+                      className="flex gap-2 text-white/25 hover:text-white"
+                    >
+                      <p>{label}</p>
+                      <Image
+                        src="/icons/arrow-right-top.svg"
+                        alt="Link"
+                        width={20}
+                        height={20}
+                        priority={true}
+                      />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <Socials />
+            </div>
           </div>
-          <Socials />
         </div>
       </div>
     </div>
