@@ -1,4 +1,3 @@
-import React from "react";
 import "./sliderButtons.css";
 import Image from "next/image";
 

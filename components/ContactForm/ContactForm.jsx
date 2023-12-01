@@ -30,8 +30,7 @@ const ContactForm = () => {
   });
 
   const onSubmit = handleSubmit((data) => {
-   
-    toast.success(`Thank you, ${data.fullName}! We have received your message and will contact you soon!`,
+   toast.success(`Thank you, ${data.fullName}! We have received your message and will contact you soon!`,
       { duration: 5000, position: "top-center" });
      reset();
   });
@@ -107,7 +106,7 @@ const ContactForm = () => {
           className="bg-white/[.05] pb-2 pl-2 pr-2 w-full border-b-[1px] resize-none border-accentColor text-question desktop:text-[20px] desktop:placeholder:text-[20px] placeholder:text-description placeholder:font-extralight placeholder:leading-6 "
           rows={5}
           placeholder="My message..."
-          {...register("message", { required: "This is required" })}
+          {...register("message")}
         />
       </div>
       <div className="flex justify-end relative">

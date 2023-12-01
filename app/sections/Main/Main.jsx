@@ -1,9 +1,8 @@
-// "use client";
-import React from "react";
-// import { Link } from "react-scroll";
+"use client";
 import { oswald } from "@/fonts/fonts";
 import Image from "next/image";
 import SimpleAddress from "@/components/SimpleAddress/SimpleAddress";
+import { Link } from "react-scroll";
 
 const Main = () => {
   return (
@@ -22,8 +21,12 @@ const Main = () => {
               water, biomass
             </p>
             <div className="flex justify-center mb-6 tablet:justify-start desktop:mb-7">
-              <button
-                type="button"
+              <Link
+                to="cases"
+                spy
+                smooth
+                duration={1500}
+                offset={-120}
                 className="border border-accentColor rounded-full flex items-center p-1 pl-3 gap-3 text-description hover:bg-primaryColor hover:border-primaryColor hover:text-accentColor transition ease duration-300"
               >
                 Learn more
@@ -35,7 +38,7 @@ const Main = () => {
                     alt="Arrow"
                   />
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

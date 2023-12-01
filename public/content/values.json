@@ -10,6 +10,14 @@
         "description": "we are aware that the results of our work have an impact on our lives and the lives of future generations"
     },
     {
+        "picture": "/images/values1.jpg",
+        "alt": "windfarms fields"
+    },
+    {
+        "picture": "/images/values2.jpg",
+        "alt": "man worker firld by solar panels"
+    },
+    {
         "icon": "/icons/cpu-charge.svg",
         "title": "Innovation",
         "description": "we use the latest technology to implement non-standard solutions"

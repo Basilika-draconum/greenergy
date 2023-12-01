@@ -1,11 +1,10 @@
 import Title from "@/components/Title/Title";
 import ValueTables from "@/components/ValueTables/ValueTables";
-import React from "react";
 
 const About = () => {
   return (
     <section className="section-main" id="about">
-      <div className="container-main ">
+      <div className="container-main">
         <div className="tablet:flex tablet:justify-between tablet:mb-[100px] ">
           <Title
             text={"Main values of our company "}

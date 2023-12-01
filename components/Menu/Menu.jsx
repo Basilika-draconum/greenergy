@@ -1,8 +1,7 @@
-import React from "react";
 import { Link } from "react-scroll";
-import navLinks from "@/public/content/navigation.json";
 import Image from "next/image";
 import Socials from "../Socials/Socials";
+import navLinks from "@/public/content/navigation.json";
 
 const Menu = ({ closeMenu }) => {
   return (
@@ -39,6 +38,7 @@ const Menu = ({ closeMenu }) => {
                       smooth
                       activeClass="active"
                       duration={duration}
+                      offset={-120}
                       className="flex gap-2 text-white/25 hover:text-white"
                     >
                       <p>{label}</p>

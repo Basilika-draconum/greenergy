@@ -1,4 +1,3 @@
-import React from "react";
 import { oswald } from "@/fonts/fonts";
 
 const Title = ({ text, className }) => {

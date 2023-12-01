@@ -55,7 +55,7 @@ const CaseSlider = () => {
                     <p className="w-[175px] tablet:w-[194px] desktop:w-[357px]">{title}</p>
                   </div>
                   <button
-                    className="bg-accentColor rounded-full p-5 hover:bg-primaryColor ease duration-300 group"
+                    className="bg-accentColor rounded-full p-5 hover:bg-primaryColor hoverButton"
                     type="button"
                   >
                     <Image
@@ -63,7 +63,7 @@ const CaseSlider = () => {
                       width={28}
                       height={28}
                       alt="reference"
-                      className="-rotate-45 hoverClass"
+                      className="-rotate-45"
                     />
                   </button>
                 </div>

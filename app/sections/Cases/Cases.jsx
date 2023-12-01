@@ -1,7 +1,6 @@
 import CaseSlider from "@/components/CaseSlider/CaseSlider";
 import SliderButtons from "@/components/SliderButton/SliderButtons";
 import Title from "@/components/Title/Title";
-import React from "react";
 
 const Cases = () => {
   return (
