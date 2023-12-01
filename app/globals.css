@@ -45,6 +45,12 @@ body {
     margin-bottom: 120px;
   }
 }
+.scrolled{
+  background: #fff;
+}
+.static{
+  background: var(--background-color);
+}
 
 .hoverClass {
   transition: filter 0.3s ease;

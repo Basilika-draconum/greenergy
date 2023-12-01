@@ -2,17 +2,34 @@
 import React from "react";
 import Image from "next/image";
 import Menu from "@/components/Menu/Menu";
-import { Link } from "react-scroll";
 import Logo from "@/components/Logo/Logo";
+import ButtonLink from "@/components/ButtonLink/ButtonLink";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
+  
+  React.useEffect(() => {
+    const handleScroll=() =>{
+      const scrollPosition = window.scrollY;
+      const scrollThreshold = 100;
+      if (scrollPosition > scrollThreshold) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <header className="w-full py-9 fixed z-20 bg-bgColor">
+    <header
+      className={`w-full py-9 fixed z-20 ${isScrolled ? "scrolled" : "static"}`}
+    >
       <div className="container-main flex items-center justify-between">
         <div>
           <Logo />
@@ -32,24 +49,7 @@ const Header = () => {
             />
           </button>
           {isMenuOpen && <Menu closeMenu={() => setMenuOpen(false)} />}
-          <Link
-            className="hidden cursor-pointer tablet:flex text-description rounded-full bg-accentColor items-center px-4 hover:text-accentColor hover:bg-primaryColor transition ease duration-300 group"
-            to="contact"
-            spy
-            smooth
-            duration={1500}
-            href="/"
-          >
-            Get in touch
-            <Image
-              src="/icons/arrow-right.svg"
-              alt="Arrow"
-              width={9}
-              height={9}
-              priority={true}
-              className="ml-3 bg-primaryColor rounded-full rotate-90 transition ease duration-300 w-[14px] h-[14px] group-hover:bg-accentColor"
-            />
-          </Link>
+          <ButtonLink text={"Get in touch"} section={"contact"} className={"hidden tablet:flex"}/>
         </div>
       </div>
     </header>
