@@ -1,7 +1,7 @@
 import React from "react";
 import values from "@/public/content/values.json";
 import Image from "next/image";
-import { oswald } from "@/app/layout";
+import { oswald } from "@/fonts/fonts";
 
 const ValueTables = () => {
   return (

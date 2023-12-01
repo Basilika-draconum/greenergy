@@ -1,8 +1,7 @@
 // "use client";
 import React from "react";
 // import { Link } from "react-scroll";
-
-import { oswald } from "@/app/layout";
+import { oswald } from "@/fonts/fonts";
 import Image from "next/image";
 import SimpleAddress from "@/components/SimpleAddress/SimpleAddress";
 

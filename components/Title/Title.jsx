@@ -1,5 +1,5 @@
 import React from "react";
-import { oswald } from "@/app/layout";
+import { oswald } from "@/fonts/fonts";
 
 const Title = ({ text, className }) => {
   return (

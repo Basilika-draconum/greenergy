@@ -1,21 +1,8 @@
-// import { Inter } from "next/font/google";
-import { Fira_Sans, Oswald } from "next/font/google";
+import { firaSans } from "@/fonts/fonts";
 import "./globals.css";
 import Header from "./sections/Header/Header";
 
-const firaSans = Fira_Sans({
-  weight: ["400", "300"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-
-export const oswald = Oswald({
-  weight: ["400", "700"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-
-export const metadata = {
+const metadata = {
   title: "EcoSolution",
   description:
     "Site says about development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass",
