@@ -47,7 +47,7 @@ const Address = () => {
           <p className="mb-2 text-description desktop:mb-4">Address:</p>
           <div className="flex gap-2 hoverButton">
             <Image src="/icons/map.svg" width={24} height={24} alt="Address"/>
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" className="text-xl tracking-[-0.8px] w-[212px] desktop:w-[434px] desktop:text-2xl desktop:tracking-[-0.96px]">
+            <a href="https://maps.google.com/?q=79005, Ukraine, Lvivstreet. Shota Rustaveli, 7" target="_blank" rel="noopener noreferrer nofollow" className="text-xl tracking-[-0.8px] w-[212px] desktop:w-[434px] desktop:text-2xl desktop:tracking-[-0.96px]">
               79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
             </a>
           </div>
