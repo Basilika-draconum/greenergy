@@ -2,7 +2,7 @@ import { firaSans } from "@/fonts/fonts";
 import "./globals.css";
 import Header from "./sections/Header/Header";
 
-const metadata = {
+export const metadata = {
   title: "EcoSolution",
   description:
     "Site says about development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass",
@@ -10,9 +10,24 @@ const metadata = {
     {
       rel: "icon",
       type: "image/svg",
-      url: "/favicon.svg",
+      media: "(prefers-color-scheme: dark)",
+      url: "/icons/favicon.svg",
+    },
+    {
+      rel: "icon",
+      type: "image/svg",
+      media: "(prefers-color-scheme: light)",
+      url: "/icons/favicon.svg",
     },
   ],
+  openGraph: {
+    title: "EcoSolution",
+    description:
+      "Site says about development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass",
+    type: "website",
+    siteName: "EcoSolution",
+    images: [{ url: "/ogp/main.png" }, { url: "/ogp/main.jpg" }],
+  },
 };
 
 export default function RootLayout({ children }) {
