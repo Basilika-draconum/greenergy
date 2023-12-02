@@ -1,9 +1,15 @@
+"use client"
+import React from "react"
 import Title from "@/components/Title/Title";
 import frequentlyQuestions from "@/public/content/questions.json";
 import ButtonLink from "@/components/ButtonLink/ButtonLink";
 import "./faq.css";
 
 const Faq = () => {
+  const [openIndex, setOpenIndex] = React.useState(0);
+  const handleToggleDetail = (index) => {
+    setOpenIndex(index === openIndex ? -1 : index)
+  }
   return (
     <section className="section-main" id="faq">
       <div className="container-main tablet:grid tablet:grid-cols-2  tablet:grid-rows-2 tablet:gap-6 desktop:gap-[185px]">
@@ -12,10 +18,11 @@ const Faq = () => {
           {frequentlyQuestions.map(({ id, question, answer }, index) => (
             <details
               className={`border-t-[1px] border-accentColor pt-4 mb-4 text-justify ${
-                index === 0 ? "first-details-open" : ""
+                index === openIndex ? "first-details-open" : ""
               }`}
               key={id}
-              open={index === 0}
+              open={index === openIndex}
+              onClick={(e) => { e.preventDefault(); handleToggleDetail(index); }}
             >
               <summary className="text-question desktop:text-2xl desktop:tracking-[-0.96px] before:content-linkAdd before:absolute before:top-[18px] before:left-[-31px] before:w-[16px] before:h-[16px] desktop:before:top-[17px]">{question}</summary>
               <p className="mt-4 text-subQuestion desktop:text-description">{answer}</p>
