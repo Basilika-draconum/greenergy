@@ -6,6 +6,7 @@
   --primary-color: #173D33;
   --accent-color: #97D28B;
   --background-color: #F3F5FA;
+  --error-color:#D28B8B;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -63,4 +64,10 @@ body {
 }
 .hoverButton:hover img{
   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
+}
+.successBorder{
+  border-color: var(--accent-color);
+}
+.errorBorder{
+border-color:var(--error-color);
 }
