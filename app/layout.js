@@ -1,6 +1,7 @@
 import { firaSans } from "@/fonts/fonts";
-import "./globals.css";
+import { Toaster } from "react-hot-toast";
 import Header from "./sections/Header/Header";
+import "./globals.css";
 
 export const metadata = {
   title: "EcoSolution",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       <body className={firaSans.className}>
         <Header />
         {children}
+        <Toaster />
       </body>
     </html>
   );

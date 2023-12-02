@@ -27,7 +27,7 @@ const Main = () => {
                 smooth
                 duration={1500}
                 offset={-120}
-                className="border border-accentColor rounded-full flex items-center p-1 pl-3 gap-3 text-description hover:bg-primaryColor hover:border-primaryColor hover:text-accentColor transition ease duration-300"
+                className="border cursor-pointer border-accentColor rounded-full flex items-center p-1 pl-3 gap-3 text-description hover:bg-primaryColor hover:border-primaryColor hover:text-accentColor transition ease duration-300"
               >
                 Learn more
                 <div className="bg-accentColor rounded-full p-2 ">
