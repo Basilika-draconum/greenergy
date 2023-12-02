@@ -1,10 +1,11 @@
 "use client";
-import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
+import React from "react";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
 import slides from "@/public/content/casesSlider.json";
-import Image from "next/image";
 import "./caseSlider.css";
 
 const carouselSettings = {
@@ -29,12 +30,16 @@ const carouselSettings = {
       spaceBetween: 48,
     },
   },
-  // onSlideChange: () => console.log("slide change"),
 };
 
-const CaseSlider = () => {
+const CaseSlider = ({ onSlideChange }) => {
+  const handleSlideChange = (swiper) => {
+    const activeIndex = swiper.realIndex;
+    onSlideChange(activeIndex+1)
+  };
+
   return (
-    <Swiper {...carouselSettings}>
+    <Swiper {...carouselSettings}  onSlideChange={handleSlideChange}>
       {slides &&
         slides.map(({ id, photo, title, city, subtitle, date }, index) => (
           <SwiperSlide key={id} className=".swiper-slide-case">

@@ -1,8 +1,14 @@
+"use client"
+import React from "react";
 import CaseSlider from "@/components/CaseSlider/CaseSlider";
 import SliderButtons from "@/components/SliderButton/SliderButtons";
 import Title from "@/components/Title/Title";
 
 const Cases = () => {
+  const [activeIndex, setActiveIndex] = React.useState(1);
+  const handleSlideChange = (index) => {
+    setActiveIndex(index)
+  }
   return (
     <section id="cases" className="section-main">
       <div className="container-main">
@@ -17,12 +23,12 @@ const Cases = () => {
           >
             <SliderButtons />
             <p className="text-[28px] tracking-[-1.12px] font-light absolute top-[37px] tablet:top-[42px]  tablet:left-[-150px] desktop:left-[-200px]">
-              01
+              {`0${activeIndex}`}
               <span className="text-bgMenu/25">/05</span>
             </p>
           </div>
         </div>
-        <CaseSlider />
+        <CaseSlider onSlideChange={handleSlideChange} />
       </div>
     </section>
   );
