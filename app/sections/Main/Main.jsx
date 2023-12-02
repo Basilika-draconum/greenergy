@@ -10,7 +10,7 @@ const Main = () => {
       <div className="container-main ">
         <div className="tablet:flex tablet:justify-between border-b-[1px] border-accentColor">
           <h1
-            className={`${oswald.className} uppercase w-80 text-4xl leading-9 mb-6 tablet:text-5xl tablet:w-[301px] desktop:text-[64px] desktop:w-[485px]`}
+            className={`${oswald.className} uppercase w-80 text-4xl leading-9 mb-6 tablet:text-5xl tablet:w-[300px] desktop:text-[64px] desktop:w-[485px]`}
           >
             RENEWABLE ENERGY for any task
           </h1>
