@@ -69,5 +69,5 @@ body {
   border-color: var(--accent-color);
 }
 .errorBorder{
-border-color:var(--error-color);
+  border-color:var(--error-color);
 }

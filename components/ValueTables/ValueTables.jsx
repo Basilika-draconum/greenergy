@@ -2,24 +2,27 @@ import React from "react";
 import values from "@/public/content/values.json";
 import Image from "next/image";
 import { oswald } from "@/fonts/fonts";
+import "./valueTables.css"
 
 const ValueTables = () => {
   return (
-    <ul className="grid grid-cols-2 gap-6">
-      {values.map(({ icon, title, description }, index) => (
-        <li
-          className="bg-bgForm px-3 pt-4 min-w-[148px] max-w-[190px] h-[197px]"
+    <ul className="valueTable">
+      {values.map(({ icon, title, description, className, picture, alt }, index) => (
+        icon && title && description ? <li
+          className={`bg-bgForm px-3 pt-4 min-w-[148px] max-w-[190px] h-[197px] desktop:h-[300px] desktop:max-w-[254px] desktop:px-5 desktop:py-12 desktop:w-[243px] ${className}`}
           key={index}
         >
           <div
-            className={`${oswald.className} uppercase text-base mb-8 flex gap-2`}
+            className={`${oswald.className} uppercase text-base mb-8 flex items-center gap-2 tablet:text-lg desktop:gap-[6px] desktop:text-[30px] desktop:mb-[94px]`}
           >
-            <Image src={icon} width={16} height={16} alt={title} />
+            <Image src={icon} width={16} height={16} alt={title} className="desktop:w-6 desktop:h-6" />
             <h3>{title}</h3>
           </div>
-          <p className="text-subQuestion border-t-[1px] border-accentColor pt-3">
+          <p className="text-subQuestion border-t-[1px] border-accentColor pt-3 desktop:text-description desktop:pt-6">
             {description}
           </p>
+        </li> : <li key={index} className={className}>
+            <Image src={picture} width={596} height={339} alt={alt}  sizes="(max-width: 1279px) 342px, 534px"/>
         </li>
       ))}
     </ul>
@@ -27,19 +30,3 @@ const ValueTables = () => {
 };
 
 export default ValueTables;
-{
-  /* <Image
-        src="/images/values1.jpg"
-        width={346}
-        height={234}
-        alt="windfarms fields"
-        className="md:hidden col-span-2"
-      />
-      <Image
-        src="/images/values2.jpg"
-        width={346}
-        height={234}
-        alt="man worker firld by solar panels"
-        className="md:hidden col-span-2"
-      /> */
-}

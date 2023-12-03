@@ -2,29 +2,35 @@
     {
         "icon": "/icons/maximize-circle.svg",
         "title": "Openness",
-        "description": "to the world, people, new ideas and projects"
+        "description": "to the world, people, new ideas and projects",
+        "className":"gridFirst"
     },
     {
         "icon": "/icons/global-edit.svg",
         "title": "Responsibility",
-        "description": "we are aware that the results of our work have an impact on our lives and the lives of future generations"
+        "description": "we are aware that the results of our work have an impact on our lives and the lives of future generations",
+        "className":"gridSecond"
     },
     {
         "picture": "/images/values1.jpg",
-        "alt": "windfarms fields"
+        "alt": "windfarms fields",
+        "className":"gridThird"
     },
     {
         "picture": "/images/values2.jpg",
-        "alt": "man worker firld by solar panels"
+        "alt": "man worker firld by solar panels",
+        "className":"gridFour"
     },
     {
         "icon": "/icons/cpu-charge.svg",
         "title": "Innovation",
-        "description": "we use the latest technology to implement non-standard solutions"
+        "description": "we use the latest technology to implement non-standard solutions",
+        "className":"gridFive"
     },
     {
         "icon": "/icons/ranking.svg",
         "title": "Quality",
-        "description": "we do not strive to be the first among others, but we want to be the best in our business"
+        "description": "we do not strive to be the first among others, but we want to be the best in our business",
+        "className":"gridSix"
     }
 ]

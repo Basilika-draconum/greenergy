@@ -1,31 +1,58 @@
-.parent {
+.valueTable {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (min-width:1280px) {
+        grid-column-gap: 36px;
+        grid-row-gap: 36px;
+    }
 }
 
-.div1 {
+.gridFirst {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.div2 {
+.gridSecond {
     grid-area: 1 / 2 / 2 / 3;
 }
 
-.div3 {
-    grid-area: 1 / 3 / 2 / 5;
+.gridThird {
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: block;
+        grid-area: 1 / 3 / 2 / 5;
+    }
 }
 
-.div4 {
-    grid-area: 2 / 1 / 3 / 3;
+.gridFour {
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: block;
+        grid-area: 2 / 1 / 3 / 3;
+    }
 }
 
-.div5 {
-    grid-area: 2 / 3 / 3 / 4;
+.gridFive {
+    grid-area: 2 / 1 / 3 / 2;
+
+    @media screen and (min-width:768px) {
+        grid-area: 2 / 3 / 3 / 4;
+    }
 }
 
-.div6 {
-    grid-area: 2 / 4 / 3 / 5;
+.gridSix {
+    grid-area: 2 / 2 / 3 / 3;
+
+    @media screen and (min-width:768px) {
+        grid-area: 2 / 4 / 3 / 5;
+    }
 }

@@ -10,7 +10,7 @@ const About = () => {
             text={"Main values of our company "}
             className={"w-[250px] tablet:w-[272px] desktop:w-[365px]"}
           />
-          <p className="text-description mt-6 mb-9 text-justify tablet:w-[342px] tablet:my-0 tablet:border-l-[1px] tablet:border-accentColor tablet:pl-[11px] desktop:w-[600px] desktop:pl-[160px] ">
+          <p className="text-description mt-6 mb-9 text-justify tablet:w-[342px] tablet:my-0 tablet:border-l-[1px] tablet:border-accentColor tablet:pl-[11px] desktop:w-[540px] desktop:pl-[100px] ">
             EcoSolution envisions a world where sustainable energy solutions
             power a brighter and cleaner future for all. We aspire to be at the
             forefront of the global shift towards renewable energy, leading the
