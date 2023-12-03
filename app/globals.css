@@ -52,7 +52,9 @@ body {
 .static{
   background: var(--background-color);
 }
-
+.active{
+ color:var(--accent-color) 
+}
 .hoverClass {
   transition: filter 0.3s ease;
 }

@@ -1,34 +1,23 @@
 import Image from "next/image";
+import src from "@/public/content/socials.json";
 
-const Socials = ({ className }) => {
+const Socials = ({ className,show }) => {
   return (
     <ul className={`flex gap-2 ${className}`}>
-      <li>
-        <a href="#" target="blank" rel="noopener noreferrer nofollow">
-          <Image
-            src="/icons/facebook.svg"
-            alt="Facebook"
-            width={24}
-            height={24}
-            priority={true}
-            className="hoverClass"
-          />
-        </a>
-      </li>
-      <li>
-        <a href="#" target="blank" rel="noopener noreferrer nofollow">
-          <Image
-            src="/icons/instagram.svg"
-            alt="Instagram"
-            width={24}
-            height={24}
-            priority={true}
-            className="hoverClass"
-          />
-          {/* <Facebook className="fill-white" /> */}
-          {/* <Facebook width={24} height={24} stroke={"red"} alt="Facebook" /> */}
-        </a>
-      </li>
+      {src.map(({ src,srcW,href }, index) => (
+        <li key={index}>
+          <a href={href} target="blank" rel="noopener noreferrer nofollow " aria-label="social">
+            <Image
+              src={show? srcW:src}
+              alt="Facebook"
+              width={24}
+              height={24}
+              priority={true}
+              className="hoverClass"
+            />
+          </a>
+        </li>
+      ))}
     </ul>
   );
 };

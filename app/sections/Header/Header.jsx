@@ -38,6 +38,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             type="button"
+             aria-label="ecosolution"
             className="bg-secondaryColor px-3 py-3 border rounded-full hover:bg-accentColor transition ease duration-300 tablet:mr-3"
           >
             <Image

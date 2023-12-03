@@ -62,6 +62,7 @@ const CaseSlider = ({ onSlideChange }) => {
                   <button
                     className="bg-accentColor rounded-full p-5 hover:bg-primaryColor hoverButton"
                     type="button"
+                     aria-label="ecosolution"
                   >
                     <Image
                       src="/icons/arrow-right.svg"
