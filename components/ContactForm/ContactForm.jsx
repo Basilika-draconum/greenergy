@@ -115,7 +115,7 @@ const ContactForm = () => {
           type="submit"
           value="send"
         />
-        <div className="bg-accentColor rounded-full p-2 absolute top-1 right-1 ">
+        <div className="bg-accentColor cursor-pointer rounded-full p-2 absolute top-1 right-1">
           <Image
             width={16}
             height={16}

@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const ButtonLink = ({ text, section, className }) => {
   return (
     <Link
-      className={`cursor-pointer text-description rounded-full bg-accentColor items-center px-4 ${className} hover:text-accentColor hover:bg-primaryColor transition ease duration-300 group`}
+      className={`cursor-pointer text-description rounded-full bg-accentColor items-center px-4 ${className} hover:text-accentColor hover:bg-primaryColor focus:text-accentColor focus:bg-primaryColor transition ease duration-300 group`}
       to={section}
       spy
       smooth
@@ -20,7 +20,7 @@ const ButtonLink = ({ text, section, className }) => {
         width={9}
         height={9}
         priority={true}
-        className="ml-3 bg-primaryColor rounded-full rotate-90 transition ease duration-300 w-[14px] h-[14px] group-hover:bg-accentColor"
+        className="ml-3 bg-primaryColor rounded-full rotate-90 transition ease duration-300 w-[14px] h-[14px] group-hover:bg-accentColor group-focus:bg-accentColor"
       />
     </Link>
   );

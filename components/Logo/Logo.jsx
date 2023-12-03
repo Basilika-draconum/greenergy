@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Ecosolution from "@/public/icons/ecosolution.svg"
 
 const Logo = () => {
   return (
@@ -6,6 +7,7 @@ const Logo = () => {
       className="cursor-pointer flex items-end gap-1"
       href="/"
       aria-label="logo"
+     
     >
       <Image
         src="/icons/favicon.svg"
@@ -14,13 +16,12 @@ const Logo = () => {
         height={18}
         priority={true}
       />
-      <Image
-        src="/icons/ecosolution.svg"
+      <Ecosolution
         alt="Ecosolution"
         width={170}
-        height={18}
+        height={25}
         priority={true}
-        className="hoverClass"
+        className="fill-primaryColor hover:fill-accentColor"
       />
       <Image
         src="/icons/greenergy.svg"

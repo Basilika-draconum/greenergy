@@ -15,11 +15,12 @@ const Footer = () => {
             <Socials className={"justify-center"} />
           </div>
           <Link
-            className="bg-accentColor rounded-full p-2 self-start hover:bg-primaryColor ease duration-300 transition hoverButton"
+            className="bg-accentColor cursor-pointer rounded-full p-2 self-start hover:bg-primaryColor ease duration-300 transition hoverButton"
             to="main"
             spy
             smooth
             duration={1500}
+            href="/"
             offset={-120}
           >
             <Image

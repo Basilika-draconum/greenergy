@@ -52,8 +52,11 @@ body {
 .static{
   background: var(--background-color);
 }
-.active{
- color:var(--accent-color) 
+.successBorder {
+  border-color: var(--accent-color);
+}
+.errorBorder {
+  border-color: var(--error-color);
 }
 .hoverClass {
   transition: filter 0.3s ease;
@@ -62,14 +65,25 @@ body {
   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
 }
 .hoverButton {
+  cursor: pointer;
   transition: filter 0.3s ease;
 }
 .hoverButton:hover img{
   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
 }
-.successBorder{
-  border-color: var(--accent-color);
+.menuArrow {
+  fill: transparent;
+  stroke: #FFFFFF40;
 }
-.errorBorder{
-  border-color:var(--error-color);
+.menuArrow:hover{
+  color:#fff
+}
+.menuArrow:hover svg{
+  stroke: #fff;
+}
+.hoverAccent {
+  transition: stroke;
+}
+.hoverAccent:hover svg {
+  stroke:var(--accent-color);
 }
