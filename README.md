@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EcoSolution
 
-## Getting Started
+Site says about development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass. EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project was built using a combination of technologies, including Next.js 13 and Tailwind CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js 13:** Utilized for routing and server-side rendering.
+- **Tailwind CSS:** Used for responsive and efficient styling.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Layout
 
-## Learn More
+- Fixed layout in pixels (px).
+- Semantic and valid structure.
+- Responsive and cross-browser compatible design:
 
-To learn more about Next.js, take a look at the following resources:
+  - Mobile devices from 360px.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ![Mobile EcoSolution](public/images/eco360.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - Tablets from 768px.
 
-## Deploy on Vercel
+    ![Tablet EcoSolution](public/images/eco768.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  - Desktops from 1280px.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ![Desktop EcoSolution](public/ogp/main.png)
+
+    ## Functionality
+
+### Header
+
+- Fixed header with a logo and navigation menu.
+- Navigation menu with links to various sections.
+- Change the header color on scroll.
+- Utilized the **react-scroll** library for smooth navigation.
+
+### Main
+
+- Clicking "Learn more" smoothly scrolls to the "Cases" section.
+
+### About (Values)
+
+- Utilize the CSS Grid algorithm for the layout.
+
+### Electricity
+
+- Implementing an automatic counter, adding +1 per second.
+
+### Cases
+
+- Slider wath implemented using **Swiper**.
+- Implementing an infinite slider,where slides change by clicking the corresponding buttons or through dragging.
+
+### FAQ
+
+- By default, have the first answer open but you can toggle them by click.
+- Clicking "Contact Us" should trigger a smooth scroll to the "Contact" section.
+
+### Contact
+
+- Form validation with **react-hook-form** and **Tailwind CSS** for error styling.
+- Implementing **react-hook-form-persist** and **react-hot-tost** for saving and showing of data.
+
+### Footer
+
+- Clicking arrow triggers a smooth scroll to the "Main" section.
+
+## Running the Project
+
+To run the project, follow these steps:
+
+1. Clone the project repository to your local computer.
+
+2. Open a terminal and navigate to the project folder.
+
+3. Execute the following commands:
+
+   ```shell
+   # Install project dependencies
+   npm install
+
+   # Start the development server
+   npm run dev
+   ```
+
+The project will be accessible at http://localhost:3000.
