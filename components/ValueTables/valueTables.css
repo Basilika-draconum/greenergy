@@ -25,7 +25,6 @@
 
 .gridThird {
     display: none;
-
     @media screen and (min-width:768px) {
         display: block;
         grid-area: 1 / 3 / 2 / 5;
@@ -34,7 +33,6 @@
 
 .gridFour {
     display: none;
-
     @media screen and (min-width:768px) {
         display: block;
         grid-area: 2 / 1 / 3 / 3;
@@ -43,7 +41,6 @@
 
 .gridFive {
     grid-area: 2 / 1 / 3 / 2;
-
     @media screen and (min-width:768px) {
         grid-area: 2 / 3 / 3 / 4;
     }
