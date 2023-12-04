@@ -22,7 +22,6 @@ const Menu = ({ closeMenu }) => {
                 alt="Close"
                 width={20}
                 height={20}
-                priority={true}
                 className="stroke-white"
               />
               close
