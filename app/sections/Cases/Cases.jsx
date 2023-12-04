@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import CaseSlider from "@/components/CaseSlider/CaseSlider";
 import SliderButtons from "@/components/SliderButton/SliderButtons";
@@ -7,8 +7,8 @@ import Title from "@/components/Title/Title";
 const Cases = () => {
   const [activeIndex, setActiveIndex] = React.useState(1);
   const handleSlideChange = (index) => {
-    setActiveIndex(index)
-  }
+    setActiveIndex(index);
+  };
   return (
     <section id="cases" className="section-main">
       <div className="container-main">

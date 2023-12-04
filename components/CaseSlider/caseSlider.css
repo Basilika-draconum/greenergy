@@ -2,32 +2,23 @@
     width: 100%;
     height: 100%;
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
     width: 320px;
     height: 318px;
-    @media screen and (min-width: 768px) {
-            width: 342px;
-            height: 322px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            width: 596px;
-            height: 506px;
-        }
-    
-}
-/* .swiper-slide-case {
-    width: 320px;
-    height: 318px;
+
     @media screen and (min-width: 768px) {
         width: 342px;
         height: 322px;
     }
+
     @media screen and (min-width: 1280px) {
         width: 596px;
         height: 506px;
     }
-} */
+
+}
+
 .image-slider {
     width: 100%;
     max-width: 460px;

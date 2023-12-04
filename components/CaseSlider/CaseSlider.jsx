@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -35,11 +34,11 @@ const carouselSettings = {
 const CaseSlider = ({ onSlideChange }) => {
   const handleSlideChange = (swiper) => {
     const activeIndex = swiper.realIndex;
-    onSlideChange(activeIndex+1)
+    onSlideChange(activeIndex + 1);
   };
 
   return (
-    <Swiper {...carouselSettings}  onSlideChange={handleSlideChange}>
+    <Swiper {...carouselSettings} onSlideChange={handleSlideChange}>
       {slides &&
         slides.map(({ id, photo, title, city, subtitle, date }, index) => (
           <SwiperSlide key={id} className=".swiper-slide-case">
@@ -57,12 +56,14 @@ const CaseSlider = ({ onSlideChange }) => {
                 <div className="flex justify-between mb-4">
                   <div className="text-question tablet:text-[20px] tablet:tracking-[-0.8px] desktop:text-[22px] desktop:tracking-[-0.96px]">
                     <p>{city}</p>
-                    <p className="w-[175px] tablet:w-[194px] desktop:w-[357px]">{title}</p>
+                    <p className="w-[175px] tablet:w-[194px] desktop:w-[357px]">
+                      {title}
+                    </p>
                   </div>
                   <button
                     className="bg-accentColor rounded-full p-5 hover:bg-primaryColor hoverButton"
                     type="button"
-                     aria-label="ecosolution"
+                    aria-label="ecosolution"
                   >
                     <Image
                       src="/icons/arrow-right.svg"

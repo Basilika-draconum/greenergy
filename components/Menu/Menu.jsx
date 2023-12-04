@@ -1,8 +1,7 @@
 import { Link } from "react-scroll";
-import Image from "next/image";
 import Socials from "../Socials/Socials";
 import navLinks from "@/public/content/navigation.json";
-import Arrow from '@/public/icons/arrow-right-top.svg';
+import Arrow from "@/public/icons/arrow-right-top.svg";
 import Close from "@/public/icons/close.svg";
 
 const Menu = ({ closeMenu }) => {
@@ -18,11 +17,7 @@ const Menu = ({ closeMenu }) => {
               type="button"
               aria-label="ecosolution"
             >
-              <Close
-                width={20}
-                height={20}
-                className="stroke-white"
-              />
+              <Close width={20} height={20} className="stroke-white" />
               close
             </button>
             <div className="h-[calc(100vh-180px)] flex flex-col justify-between">
@@ -42,15 +37,12 @@ const Menu = ({ closeMenu }) => {
                       className="flex gap-2 text-white/25 menuArrow"
                     >
                       <p>{label}</p>
-                      <Arrow
-                        width={20}
-                        height={20}
-                      />
+                      <Arrow width={20} height={20} />
                     </Link>
                   </li>
                 ))}
               </ul>
-              <Socials show={true}/>
+              <Socials show={true} />
             </div>
           </div>
         </div>

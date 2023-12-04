@@ -9,9 +9,7 @@ const Contact = () => {
       <div className="container-main">
         <Title
           text={"Contact us"}
-          className={
-            "justify-center tablet:mb-10 desktop:mb-[120px]"
-          }
+          className={"justify-center tablet:mb-10 desktop:mb-[120px]"}
         />
         <div className="mt-6 tablet:flex tablet:gap-[122px] tablet:justify-between">
           <div className="mb-6">

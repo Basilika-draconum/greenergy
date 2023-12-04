@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Ecosolution from "@/public/icons/ecosolution.svg"
+import Ecosolution from "@/public/icons/ecosolution.svg";
 
 const Logo = () => {
   return (
@@ -7,7 +7,6 @@ const Logo = () => {
       className="cursor-pointer flex items-end gap-1"
       href="/"
       aria-label="logo"
-     
     >
       <Image
         src="/icons/favicon.svg"

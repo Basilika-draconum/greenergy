@@ -8,9 +8,9 @@ import ButtonLink from "@/components/ButtonLink/ButtonLink";
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
-  
+
   React.useEffect(() => {
-    const handleScroll=() =>{
+    const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const scrollThreshold = 100;
       if (scrollPosition > scrollThreshold) {
@@ -18,7 +18,7 @@ const Header = () => {
       } else {
         setIsScrolled(false);
       }
-    }
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -38,7 +38,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             type="button"
-             aria-label="ecosolution"
+            aria-label="ecosolution"
             className="bg-secondaryColor px-3 py-3 border rounded-full hover:bg-accentColor transition ease duration-300 tablet:mr-3"
           >
             <Image
@@ -50,7 +50,11 @@ const Header = () => {
             />
           </button>
           {isMenuOpen && <Menu closeMenu={() => setMenuOpen(false)} />}
-          <ButtonLink text={"Get in touch"} section={"contact"} className={"hidden tablet:flex"}/>
+          <ButtonLink
+            text={"Get in touch"}
+            section={"contact"}
+            className={"hidden tablet:flex"}
+          />
         </div>
       </div>
     </header>

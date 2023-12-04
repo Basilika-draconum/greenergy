@@ -10,7 +10,7 @@ const Footer = dynamic(() => import("./sections/Footer/Footer"));
 export default function Home() {
   return (
     <>
-      <main className="">
+      <main>
         <Main />
         <About />
         <Electricity />
