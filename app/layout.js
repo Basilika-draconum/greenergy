@@ -28,6 +28,7 @@ export const metadata = {
     type: "website",
     siteName: "EcoSolution",
     images: [{ url: "/ogp/main.png" }, { url: "/ogp/main.jpg" }],
+    url: "https://ecosolution-red.vercel.app/",
   },
 };
 

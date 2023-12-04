@@ -19,7 +19,6 @@ const Menu = ({ closeMenu }) => {
               aria-label="ecosolution"
             >
               <Close
-                alt="Close"
                 width={20}
                 height={20}
                 className="stroke-white"
@@ -38,17 +37,14 @@ const Menu = ({ closeMenu }) => {
                       to={href}
                       spy
                       smooth
-                      // activeClass="active"
                       duration={duration}
                       offset={-120}
                       className="flex gap-2 text-white/25 menuArrow"
                     >
                       <p>{label}</p>
                       <Arrow
-                        alt="Link"
                         width={20}
                         height={20}
-                        priority={true}
                       />
                     </Link>
                   </li>

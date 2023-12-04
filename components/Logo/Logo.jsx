@@ -17,10 +17,8 @@ const Logo = () => {
         priority={true}
       />
       <Ecosolution
-        alt="Ecosolution"
         width={170}
         height={25}
-        priority="true"
         className="fill-primaryColor hover:fill-accentColor"
       />
       <Image
